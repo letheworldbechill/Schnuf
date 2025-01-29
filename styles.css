@@ -1,0 +1,130 @@
+/* Basic reset and mobile-friendly styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  background: #00bcd4;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+nav button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #008c9e;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav button:hover,
+nav button.active {
+  background: #007f8f;
+}
+
+/* Container for technique sections */
+.container {
+  width: 95%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.technique {
+  display: none; /* All sections hidden by default */
+}
+
+.technique.active {
+  display: block; /* Only active technique is displayed */
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.instructions {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.animation-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #00bcd4;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.timer-display {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.start-button, .stop-button {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-button:hover,
+.stop-button:hover {
+  background: #0192a7;
+}
+
+/* Simple breathing animation */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.breathing {
+  animation: breathe 4s infinite;
+}
