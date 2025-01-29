@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Ensures the app scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breathing Techniques</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Breathing Techniques</h1>
+  </header>
+  
+  <!-- Navigation Buttons -->
+  <nav>
+    <button id="btnWimHof" class="active">Wim Hof</button>
+    <button id="btn478">4-7-8</button>
+    <button id="btnBox">Box Breathing</button>
+    <button id="btnEqual">Equal Breathing</button>
+  </nav>
+
+  <!-- Main Container for Techniques -->
+  <div class="container">
+    
+    <!-- Wim Hof Technique -->
+    <section id="wimHofSection" class="technique active">
+      <div class="title">Wim Hof Breathing</div>
+      <p class="instructions">
+        The Wim Hof Method typically involves 30 rapid, deep breaths followed 
+        by a breath hold on exhale, then a recovery breath. This simplified timer 
+        guides you through a single round. Click start to begin.
+      </p>
+      <div class="animation-circle" id="wimHofCircle">
+        <span>Hold</span>
+      </div>
+      <div class="timer-display" id="wimHofTimer">00:00</div>
+      <button class="start-button" id="startWimHof">Start</button>
+      <button class="stop-button" id="stopWimHof">Stop</button>
+    </section>
+
+    <!-- 4-7-8 Technique -->
+    <section id="fourSevenEightSection" class="technique">
+      <div class="title">4-7-8 Breathing</div>
+      <p class="instructions">
+        Inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. 
+        This cycle can be repeated multiple times to induce relaxation.
+      </p>
+      <div class="animation-circle" id="fourSevenEightCircle">
+        <span>Relax</span>
+      </div>
+      <div class="timer-display" id="fourSevenEightTimer">Inhale</div>
+      <button class="start-button" id="start478">Start</button>
+      <button class="stop-button" id="stop478">Stop</button>
+    </section>
+
+    <!-- Box Breathing (4-4-4-4) -->
+    <section id="boxSection" class="technique">
+      <div class="title">Box Breathing</div>
+      <p class="instructions">
+        Box Breathing is typically done by inhaling for 4 seconds, holding for 4, 
+        exhaling for 4, and holding for 4 again.
+      </p>
+      <div class="animation-circle" id="boxCircle">
+        <span>Box</span>
+      </div>
+      <div class="timer-display" id="boxTimer">Inhale</div>
+      <button class="start-button" id="startBox">Start</button>
+      <button class="stop-button" id="stopBox">Stop</button>
+    </section>
+
+    <!-- Equal Breathing (same inhale and exhale) -->
+    <section id="equalSection" class="technique">
+      <div class="title">Equal Breathing</div>
+      <p class="instructions">
+        Inhale and exhale for the same count (e.g., 5 seconds in, 5 seconds out). 
+        This technique helps stabilize the breath.
+      </p>
+      <div class="animation-circle" id="equalCircle">
+        <span>Equal</span>
+      </div>
+      <div class="timer-display" id="equalTimer">Inhale</div>
+      <button class="start-button" id="startEqual">Start</button>
+      <button class="stop-button" id="stopEqual">Stop</button>
+    </section>
+
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+  </html>
